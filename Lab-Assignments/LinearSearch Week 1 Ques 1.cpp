@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     int t;
-    cout << " Total Test Cases : ";
+    cout << "Total Test Cases : ";
     cin >> t;
     for (int j = 0; j < t; j++)
     {
@@ -21,12 +21,12 @@ int main()
         for (int i = 0; i < n; i++)
             cin >> A[i];
 
-        int key, passes = 0, flag = 0;
+        int key, comp = 0, flag = 0;
         cout << "Enter Key : ";
         cin >> key;
         for (int i = 0; i < n; i++)
         {
-            passes++;
+            comp++;
             if (key == A[i])
             {
                 flag = 1;
@@ -40,6 +40,6 @@ int main()
         else
             cout << "key Not found bro" << endl;
 
-        cout << "Passes : " << passes << endl;
+        cout << "Comparisons : " << comp << endl;
     }
 }
